@@ -15,7 +15,7 @@ class PlayerCore
     return parseFloat(n1 + _t * (n2-n1)).toFixed(3)
 
   @lerpPos: (pos1, pos2, time) ->
-    console.log @lerp(pos1.x, pos2.x, time)
+    #console.log @lerp(pos1.x, pos2.x, time)
     return { x: @lerp(pos1.x, pos2.x, time), y: @lerp(pos1.y, pos2.y, time) }
 
   constructor: (@game, @server_player_instance, @client=false) ->

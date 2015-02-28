@@ -28,7 +28,6 @@ PlayerCore = (function() {
   };
 
   PlayerCore.lerpPos = function(pos1, pos2, time) {
-    console.log(this.lerp(pos1.x, pos2.x, time));
     return {
       x: this.lerp(pos1.x, pos2.x, time),
       y: this.lerp(pos1.y, pos2.y, time)
