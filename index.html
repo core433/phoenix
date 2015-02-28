@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title> Phoenix </title>
+
+      <!-- Load style sheet -->
+    <link href="index.css" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- Connect to socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- io() loads socket.io-client and exposes io global and connects -->
+    <script>
+      var socket = io();
+    </script>
+
+    <!-- Game libraries code --> 
+    <script type="text/javascript" src="node_modules/phaser/build/phaser.min.js"></script>
+    <script type="text/javascript" src="game_client/lib/keyboard.js"></script>
+    <!-- Finally, Load the game client code. -->
+    <script type="text/javascript" src="game_core/game_core.js"></script>
+    <script type="text/javascript" src="game_core/client_network.js"></script>
+    <script type="text/javascript" src="game_core/player.js"></script>
+    <script type="text/javascript" src="game_client/phaser_states.js"></script>
+    <script type="text/javascript" src="game_client/game_client.js"></script>
+
+  </head>
+
+  <body>
+    <div id="viewport"></canvas>
+  </body>
+
+</html>
